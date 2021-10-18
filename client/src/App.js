@@ -2,6 +2,9 @@ import "./App.css";
 import NavbarComponent from "./components/NavbarComponent";
 import React from "react";
 import LandingPage from "./layout/LandingPage";
+import Mars from "./layout/Mars";
+import Andromeda from "./layout/Andromeda";
+import Moon from "./layout/Moon";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import HomePage from "./layout/HomePage";
@@ -37,11 +40,14 @@ function App() {
       <ApolloProvider client={client}>
         <Router>
           <Switch>
-            <Route exact path="/" component={LandingPage} />
             <div>
               <NavbarComponent />
               <Container>
                 <Route exact path="/Homepage" component={HomePage} />
+                <Route exact path="/" component={LandingPage} />
+                <Route exact path="/Mars" component={Mars} />
+                <Route exact path="/Moon" component={Moon} />
+                <Route exact path="/Andromeda" component={Andromeda} />
               </Container>
             </div>
           </Switch>

@@ -1,6 +1,6 @@
 import React from "react";
-import "./Homepage.css";
+import "./Moon.css";
 
 export default function Background() {
-  return <div class="homepage-bg"></div>;
+  return <div class="moon-bg"></div>;
 }
