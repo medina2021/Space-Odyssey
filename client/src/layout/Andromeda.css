@@ -1,0 +1,11 @@
+.andromeda-bg {
+  background: url("https://media.istockphoto.com/photos/mountains-at-night-with-milky-way-galaxy-picture-id507253524?b=1&k=20&m=507253524&s=170667a&w=0&h=YQhHBze27jFtq7Pqn8sc8bYaEyCQI2vcC1BlBOwzPnc=");
+  width: 100%;
+  height: 93vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

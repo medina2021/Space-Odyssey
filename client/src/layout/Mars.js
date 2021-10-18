@@ -1,6 +1,6 @@
 import React from "react";
-import "./Homepage.css";
+import "./Mars.css";
 
 export default function Background() {
-  return <div class="homepage-bg"></div>;
+  return <div class="mars-bg"></div>;
 }
