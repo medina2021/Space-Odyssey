@@ -15,6 +15,7 @@ import {
 import gql from "graphql-tag";
 import { graphql } from "@apollo/react-hoc";
 
+
 // Initialize the Apollo Client
 const client = new ApolloClient({
   link: createHttpLink({ uri: "http://localhost:3001/graphql" }),
@@ -52,3 +53,4 @@ function App() {
 }
 
 export default App;
+
