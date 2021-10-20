@@ -5,4 +5,5 @@ import Stripe from "../components/stripe";
 
 export default function Andromeda() {
   return <Stripe />;
+  //hello
 }
