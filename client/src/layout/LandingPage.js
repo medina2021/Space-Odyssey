@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Tabs, Tab, Container, Button, Form } from "react-bootstrap";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
+import "./LandingPage.css";
 //
 import { useMutation } from "@apollo/client";
 import { REGISTER_USER, LOGIN_USER } from "../utils/mutations";
