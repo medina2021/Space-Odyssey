@@ -1,6 +1,9 @@
 import React from "react";
 import "./Andromeda.css";
+import Stripe from "../components/stripe"
 
-export default function Background() {
-  return <div class="andromeda-bg"></div>;
+export default function Andromeda() {
+  return (
+<Stripe/>
+);
 }
