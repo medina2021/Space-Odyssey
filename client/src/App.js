@@ -14,9 +14,11 @@ import {
   InMemoryCache,
   createHttpLink,
 } from "@apollo/client";
+import StripeCheckout from "react-stripe-checkout"
 
 import gql from "graphql-tag";
 import { graphql } from "@apollo/react-hoc";
+
 
 // Initialize the Apollo Client
 const client = new ApolloClient({
@@ -59,3 +61,4 @@ function App() {
 }
 
 export default App;
+
