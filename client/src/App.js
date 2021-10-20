@@ -35,7 +35,8 @@ const DATA_QUERY = gql`
   }
 `;
 // must wrap apolloProvider to use tech
-//
+//any pages you want to exist you put in the routes
+
 function App() {
   return (
     <>

@@ -20,3 +20,32 @@ export const LOGIN_USER = gql`
     }
   }
 `;
+export const REGISTER_FORM = gql`
+  mutation registerForm(
+    $FirstName: String
+    $LastName: String
+    $address: String
+    $areacode: String
+    $state: String
+    $PhoneNumber: String
+  ) {
+    RegisterForm(
+      post: {
+        FirstName: $FirstName
+        LastName: $LastName
+        address: $address
+        areacode: $areacode
+        state: $state
+        PhoneNumber: $PhoneNumber
+      }
+    ) {
+      id
+      FirstName
+      LastName
+      address
+      areacode
+      state
+      PhoneNumber
+    }
+  }
+`;
