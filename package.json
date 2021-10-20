@@ -2,17 +2,18 @@
   "name": "space-odyssey",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "start": "node backend/server",
     "client": "npm start --prefix client",
-    "server": "nodemon backend/server --ignore client",
+    "server": "nodemon backend/server",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aldoquin/Space-Odyssey.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {

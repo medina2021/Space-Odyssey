@@ -11,6 +11,15 @@ const typeDefs = gql`
     email: String
     token: String
   }
+  type Form {
+    id: ID
+    FirstName: String
+    LastName: String
+    address: String
+    areacode: String
+    state: String
+    PhoneNumber: String
+  }
 
   type Query {
     hello: String!
@@ -21,10 +30,19 @@ const typeDefs = gql`
     password: String
     email: String
   }
+  input registerForm {
+    FirstName: String
+    LastName: String
+    address: String
+    areacode: String
+    state: String
+    PhoneNumber: String
+  }
 
   type Mutation {
     RegisterUser(post: registerInput): User
     LoginUser(email: String, password: String): User
+    RegisterForm(post: registerForm): Form
   }
 `;
 

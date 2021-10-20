@@ -5,6 +5,7 @@ const jwt = require("jsonwebtoken");
 const authMiddleware = require("../routes/middleware");
 const saltRounds = 10;
 const User = require("./userSchema");
+const Form = require("./PersonalForm");
 
 function generateToken(user) {
   return jwt.sign(
@@ -60,9 +61,23 @@ const resolvers = {
         token,
       };
     },
-    
-
-
+    RegisterForm: async (parent, args, context, info) => {
+      const { FirstName, LastName, address, areacode, state, PhoneNumber } =
+        args.post;
+      try {
+        const form = new Form({
+          FirstName: FirstName,
+          LastName: LastName,
+          address: address,
+          areacode: areacode,
+          state: state,
+          PhoneNumber: PhoneNumber,
+        }).save();
+        return form;
+      } catch (err) {
+        console.log(err);
+      }
+    },
   },
 };
 

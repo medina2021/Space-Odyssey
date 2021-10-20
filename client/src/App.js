@@ -2,6 +2,9 @@ import "./App.css";
 import NavbarComponent from "./components/NavbarComponent";
 import React from "react";
 import LandingPage from "./layout/LandingPage";
+import Mars from "./layout/Mars";
+import Andromeda from "./layout/Andromeda";
+import Moon from "./layout/Moon";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import HomePage from "./layout/HomePage";
@@ -42,7 +45,10 @@ function App() {
               <NavbarComponent />
               <Container>
                 <Route exact path="/Homepage" component={HomePage} />
-                <Route exact path="/Landingpage" component={LandingPage} />
+                <Route exact path="/" component={LandingPage} />
+                <Route exact path="/Mars" component={Mars} />
+                <Route exact path="/Moon" component={Moon} />
+                <Route exact path="/Andromeda" component={Andromeda} />
               </Container>
             </div>
           </Switch>
