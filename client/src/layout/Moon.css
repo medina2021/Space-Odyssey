@@ -9,3 +9,10 @@
   bottom: 0;
   left: 0;
 }
+
+.title,
+.description-text {
+  width: 30%;
+  margin: 35px;
+  color: white;
+}

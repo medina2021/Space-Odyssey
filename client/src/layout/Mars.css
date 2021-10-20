@@ -9,3 +9,15 @@
   bottom: 0;
   left: 0;
 }
+
+.title,
+.description-text {
+  width: 30%;
+  /* margin: 55px; */
+  color: white;
+  letter-spacing: 0.08em;
+}
+
+.description-text {
+  font-size: 20px;
+}

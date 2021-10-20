@@ -8,4 +8,19 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  /* z-index: 0; */
+}
+
+.carousel {
+  width: 600px;
+  position: absolute;
+  bottom: 5%;
+  left: 30%;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    width: 400px;
+    left: 10%;
+  }
 }

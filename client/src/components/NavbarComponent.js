@@ -26,7 +26,10 @@ const NavbarComponent = () => {
             </NavDropdown>
           </Nav>
           <Nav className="me-auto">
-            <Nav.Link onClick={() => signout()}>Resister/log in</Nav.Link>
+            <Nav.Link onClick={() => signout()}>Sign-out</Nav.Link>
+          </Nav>
+          <Nav className="me-auto">
+            <Nav.Link onClick={() => signout()}>Register/Log in</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
