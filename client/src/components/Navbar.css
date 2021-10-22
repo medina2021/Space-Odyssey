@@ -1,0 +1,27 @@
+.container-fluid {
+  margin-left: 40px;
+}
+
+.registration {
+  display: flex;
+  align-items: center;
+  color: navy;
+  margin-right: 45px;
+}
+
+.sign-out,
+.log-in {
+  padding-right: 30px;
+}
+
+.me-auto {
+  font-weight: bold;
+}
+
+strong {
+  color: blue;
+  font-size: 26px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  padding-right: 30px;
+}
