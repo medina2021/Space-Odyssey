@@ -5,6 +5,7 @@ import LandingPage from "./layout/LandingPage";
 import Mars from "./layout/Mars";
 import Andromeda from "./layout/Andromeda";
 import Moon from "./layout/Moon";
+import TicketForm from "./layout/TicketForm";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import HomePage from "./layout/HomePage";
@@ -14,11 +15,10 @@ import {
   InMemoryCache,
   createHttpLink,
 } from "@apollo/client";
-import StripeCheckout from "react-stripe-checkout"
+import StripeCheckout from "react-stripe-checkout";
 
 import gql from "graphql-tag";
 import { graphql } from "@apollo/react-hoc";
-
 
 // Initialize the Apollo Client
 const client = new ApolloClient({
@@ -51,6 +51,7 @@ function App() {
                 <Route exact path="/Mars" component={Mars} />
                 <Route exact path="/Moon" component={Moon} />
                 <Route exact path="/Andromeda" component={Andromeda} />
+                <Route exact path="/TicketForm" component={TicketForm} />
               </Container>
             </div>
           </Switch>
@@ -61,4 +62,3 @@ function App() {
 }
 
 export default App;
-
