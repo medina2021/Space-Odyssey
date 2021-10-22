@@ -10,9 +10,10 @@ const NavbarComponent = () => {
     history.push("/");
   };
   return (
-    <Navbar variant="light" bg="light" expand="lg">
+    <Navbar variant="light" bg="light" expand="lg" className="nav">
       <Container fluid>
         <Navbar.Brand href="#home">
+          <i class="fas fa-starship-freighter"></i>
           <strong>Space Oddyssey</strong>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
