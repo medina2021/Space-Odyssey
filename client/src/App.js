@@ -46,7 +46,6 @@ function App() {
           <Switch>
             <div>
               <NavbarComponent />
-
               <Footer />
               <Container>
                 <Route exact path="/Homepage" component={HomePage} />

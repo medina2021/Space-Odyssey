@@ -1,16 +1,23 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 import "./Mars.css";
+import { useHistory } from "react-router-dom";
 
 export default function Mars() {
+  const history = useHistory();
+  const TicketFormpage = () => {
+    history.push("/TicketForm");
+  };
   return (
-    <div class="mars-bg">
-      <h1 class="title">Mars</h1>
-      <p class="description-text">
-        Take a voyage on the "Red Planet" where the sunsets are blue and the
-        seasons are extreme. Mars is home to a diverse terrain which includes
-        ice caps, extinct volcanoes, ice caps and Olympus Moons, the tallest
-        mountain in the solar system.
-      </p>
-    </div>
+    <>
+      <div class="mars-bg">
+        <Button
+          onClick={() => TicketFormpage()}
+          as="input"
+          type="button"
+          value="Input"
+        />{" "}
+      </div>
+    </>
   );
 }
