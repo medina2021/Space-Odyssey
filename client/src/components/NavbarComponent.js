@@ -1,5 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
+import "./Navbar.css";
+
 import { useHistory } from "react-router-dom";
 const NavbarComponent = () => {
   const history = useHistory();
@@ -9,8 +11,10 @@ const NavbarComponent = () => {
   };
   return (
     <Navbar variant="light" bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand href="#home">Space Oddyssey</Navbar.Brand>
+      <Container fluid>
+        <Navbar.Brand href="#home">
+          <strong>Space Oddyssey</strong>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -25,12 +29,14 @@ const NavbarComponent = () => {
               <Nav.Link href="/Andromeda">Andromeda</Nav.Link>
             </NavDropdown>
           </Nav>
-          <Nav className="me-auto">
-            <Nav.Link onClick={() => signout()}>Sign-out</Nav.Link>
-          </Nav>
-          <Nav className="me-auto">
-            <Nav.Link onClick={() => signout()}>Register/Log in</Nav.Link>
-          </Nav>
+          <div class="registration">
+            <Nav className="me-auto sign-out">
+              <Nav.Link onClick={() => signout()}>Sign-out</Nav.Link>
+            </Nav>
+            <Nav className="me-auto log-in">
+              <Nav.Link onClick={() => signout()}>Register/Log in</Nav.Link>
+            </Nav>
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>

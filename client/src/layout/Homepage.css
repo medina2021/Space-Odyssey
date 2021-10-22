@@ -1,20 +1,19 @@
 .homepage-bg {
   background: url("https://media.istockphoto.com/photos/futuristic-space-city-rings-picture-id1261706973?b=1&k=20&m=1261706973&s=170667a&w=0&h=hADuSQPAfTobe_UFBneEg2AQTPvC_bLHxGHLMwgMNLo=");
   width: 100%;
-  height: 93vh;
+  height: 90vh;
+  margin-left: 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
-  bottom: 0;
+  position: center;
   left: 0;
-  /* z-index: 0; */
 }
 
 .carousel {
   width: 600px;
   position: absolute;
-  bottom: 5%;
+  bottom: 20%;
   left: 30%;
 }
 

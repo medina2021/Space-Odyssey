@@ -1,6 +1,5 @@
 import React from "react";
 import "./Mars.css";
-import { Form, Button, Container } from "react-bootstrap";
 
 export default function Mars() {
   return (
