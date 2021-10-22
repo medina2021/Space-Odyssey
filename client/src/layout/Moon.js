@@ -1,17 +1,23 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 import "./Moon.css";
+import { useHistory } from "react-router-dom";
 
 export default function Moon() {
+  const history = useHistory();
+  const TicketFormpage = () => {
+    history.push("/TicketForm");
+  };
   return (
-    <div class="moon-bg">
-      <h1 class="title">The Moon:</h1>
-
-      <p class="description-text">
-        Take a voyage on the Moon which is one of Earth's closest neighbors.Here
-        the lack of an atmosphere means no sound and the sky will always be
-        black. The terrain here is rocky and full of craters waiting for your
-        discovery.
-      </p>
-    </div>
+    <>
+      <div class="moon-bg">
+        <Button
+          onClick={() => TicketFormpage()}
+          as="input"
+          type="button"
+          value="Input"
+        />{" "}
+      </div>
+    </>
   );
 }

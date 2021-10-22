@@ -37,7 +37,7 @@ export default function FlightForm() {
   };
   return (
     <>
-      <div>
+      <form>
         <Form variant="light" bg="light" expand="lg" style={{ color: "white" }}>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Label>FirstName</Form.Label>
@@ -99,7 +99,7 @@ export default function FlightForm() {
             Submit
           </Button>
         </Form>
-      </div>
+      </form>
     </>
   );
 }

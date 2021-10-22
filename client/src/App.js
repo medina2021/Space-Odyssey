@@ -5,6 +5,7 @@ import LandingPage from "./layout/LandingPage";
 import Mars from "./layout/Mars";
 import Andromeda from "./layout/Andromeda";
 import Moon from "./layout/Moon";
+import TicketForm from "./layout/TicketForm";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import HomePage from "./layout/HomePage";
@@ -53,6 +54,7 @@ function App() {
                 <Route exact path="/Mars" component={Mars} />
                 <Route exact path="/Moon" component={Moon} />
                 <Route exact path="/Andromeda" component={Andromeda} />
+                <Route exact path="/TicketForm" component={TicketForm} />
               </Container>
             </div>
           </Switch>
