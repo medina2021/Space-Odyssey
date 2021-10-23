@@ -1,7 +1,7 @@
 # Space Odyssey...
 ### A series of voyages
 
-![Main Page](/client/public/layout/pictures/SpaceOdyssey.PNG)
+![Main Page](/client/src/layout/pictures/SpaceOdyssey.PNG)
 
 ## Heroku Deployment
 #### 
