@@ -48,7 +48,7 @@ function App() {
               <NavbarComponent />
               <Footer />
               <Container>
-                <Route exact path="/Homepage" component={HomePage} />
+                <Route exact path="/HomePage" component={HomePage} />
                 <Route exact path="/" component={LandingPage} />
                 <Route exact path="/Mars" component={Mars} />
                 <Route exact path="/Moon" component={Moon} />
