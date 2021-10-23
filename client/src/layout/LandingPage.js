@@ -32,11 +32,15 @@ export default function LandingPage() {
             password: password,
           },
         });
+
         console.log(data);
       } catch (err) {
         console.error(err);
       }
     }
+    setEmail("");
+    setName("");
+    setPassword("");
   };
   const login = async () => {
     if (email2 === "" || password2 === "") {
@@ -85,6 +89,7 @@ export default function LandingPage() {
                     onChange={(e) => setEmail(e.target.value)}
                     type="email"
                     placeholder="Enter email"
+                    value={email}
                   />
                 </Form.Group>
                 <Form.Group className="mb-3">
@@ -92,6 +97,7 @@ export default function LandingPage() {
                   <Form.Control
                     onChange={(e) => setName(e.target.value)}
                     placeholder="Name"
+                    value={name}
                   />
                 </Form.Group>
                 <Form.Group className="mb-3">
@@ -100,6 +106,7 @@ export default function LandingPage() {
                     onChange={(e) => setPassword(e.target.value)}
                     type="password"
                     placeholder="Password"
+                    value={password}
                   />
                 </Form.Group>
                 <Button variant="primary" onClick={() => register()}>
