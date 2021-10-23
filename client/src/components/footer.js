@@ -17,8 +17,8 @@ function Footer() {
                 </li>
                 <li>123 Earth Ln</li>
                 <li>Milkey Way, 00000</li>
-                <li>1 (800) 555-555</li>
-                <li>juan@space_oddyssey.org</li>
+                <li>1 (800) 555-4107</li>
+                <li>Jbernal@space_oddyssey.org</li>
               </ul>
             </div>
             {/* Column 2 */}
@@ -30,8 +30,8 @@ function Footer() {
                 </li>
                 <li>123 Earth Ln</li>
                 <li>Milkey Way, 00000</li>
-                <li>1 (800) 555-555</li>
-                <li>juan@space_oddyssey.org</li>
+                <li>1 (800) 555-4108</li>
+                <li>Emedina@space_oddyssey.org</li>
               </ul>
             </div>
             {/* Column 3 */}
@@ -43,8 +43,8 @@ function Footer() {
                 </li>
                 <li>123 Earth Ln</li>
                 <li>Milkey Way, 00000</li>
-                <li>1 (800) 555-555</li>
-                <li>juan@space_oddyssey.org</li>
+                <li>1 (800) 555-4109</li>
+                <li>Aquintero@space_oddyssey.org</li>
               </ul>
             </div>
             {/* Column 4 */}
@@ -56,8 +56,8 @@ function Footer() {
                 </li>
                 <li>123 Earth Ln</li>
                 <li>Milkey Way, 00000</li>
-                <li>1 (800) 555-555</li>
-                <li>juan@space_oddyssey.org</li>
+                <li>1 (800) 555-4110</li>
+                <li>Mgriggs@space_oddyssey.org</li>
               </ul>
             </div>
           </div>

@@ -1,23 +1,53 @@
 .mars-bg {
   background: url("https://images.unsplash.com/photo-1547234935-80c7145ec969?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bWFyc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
   width: 100%;
-  height: 93vh;
+  height: 92%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: 0;
 }
 
-.title,
-.description-text {
-  width: 30%;
-  /* margin: 55px; */
+.button {
+  display: flex;
+  position: absolute;
+  right: 5%;
+  bottom: 18%;
+}
+
+.card {
+  background: transparent;
+  max-width: 700px;
+  border: none;
+  margin: 30px;
   color: white;
-  letter-spacing: 0.08em;
+  font-size: 20px;
 }
 
-.description-text {
-  font-size: 20px;
+.card-title {
+  font-size: 25px;
+  padding: 0;
+  color: white;
+}
+
+.mons {
+  width: 400px;
+  padding-left: 50px;
+}
+
+.card-body {
+  font-size: 18px;
+  margin-left: 32px;
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    font-size: smaller;
+  }
+  .mons .card-title {
+    font-size: 20px;
+  }
 }
