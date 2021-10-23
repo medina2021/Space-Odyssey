@@ -42,9 +42,10 @@ export default function Moon() {
               }}
               class="description-text"
             >
-              The Moon’s desolate beauty has been a source of fascination and
-              curiosity throughout history and has inspired a rich cultural and
-              symbolic tradition
+              For size comparison, if the Earth was the size of a basketball the
+              moon would be the size of a tennis ball. And just like Earth, the
+              moon has its own quakes that are caused by the gravitational pull
+              from the Earth.
             </p>
           </Col>
           <Col>
