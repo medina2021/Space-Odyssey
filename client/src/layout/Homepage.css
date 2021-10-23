@@ -12,7 +12,7 @@
 
 .carousel {
   width: 600px;
-  position: absolute;
+  position:absolute;
   bottom: 20%;
   left: 30%;
 }
@@ -77,3 +77,4 @@
     font-size: 30px;
   }
 }
+
