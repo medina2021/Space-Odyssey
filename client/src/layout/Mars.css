@@ -34,7 +34,7 @@
 }
 
 .mons {
-  width: 400px;
+  width: 600px;
   padding-left: 50px;
 }
 
@@ -49,5 +49,8 @@
   }
   .mons .card-title {
     font-size: 20px;
+  }
+  .mons {
+    width: 400px;
   }
 }
