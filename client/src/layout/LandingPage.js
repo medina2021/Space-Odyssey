@@ -67,78 +67,75 @@ export default function LandingPage() {
       {auth ? (
         history.push("/HomePage")
       ) : (
-        <Container
-          style={{
-            marginTop: "5%",
-            width: "500px",
-            padding: "15px",
-            background: "gray",
-          }}
-        >
-          <Tabs
-            defaultActiveKey="profile"
-            id="uncontrolled-tab-example"
-            className="mb-3"
-            style={{ justifyContent: "center" }}
+        <div className="andromeda-image">
+          <Container
+            style={{
+              marginTop: "10%",
+              width: "500px",
+              padding: "15px",
+              background: "gray",
+            }}
           >
-            <Tab eventKey="home" title="sign up">
-              <Form>
-                <Form.Group className="mb-3">
-                  <Form.Label>Email address</Form.Label>
-                  <Form.Control
-                    onChange={(e) => setEmail(e.target.value)}
-                    type="email"
-                    placeholder="Enter email"
-                    value={email}
-                  />
-                </Form.Group>
-                <Form.Group className="mb-3">
-                  <Form.Label>Name</Form.Label>
-                  <Form.Control
-                    onChange={(e) => setName(e.target.value)}
-                    placeholder="Name"
-                    value={name}
-                  />
-                </Form.Group>
-                <Form.Group className="mb-3">
-                  <Form.Label>Password</Form.Label>
-                  <Form.Control
-                    onChange={(e) => setPassword(e.target.value)}
-                    type="password"
-                    placeholder="Password"
-                    value={password}
-                  />
-                </Form.Group>
-                <Button variant="primary" onClick={() => register()}>
-                  Submit
-                </Button>
-              </Form>
-            </Tab>
-            <Tab eventKey="profile" title="login">
-              <Form>
-                <Form.Group className="mb-3">
-                  <Form.Label>Email address</Form.Label>
-                  <Form.Control
-                    onChange={(e) => setEmail2(e.target.value)}
-                    type="email"
-                    placeholder="Enter email"
-                  />
-                </Form.Group>
-                <Form.Group className="mb-3">
-                  <Form.Label>Password</Form.Label>
-                  <Form.Control
-                    onChange={(e) => setPassword2(e.target.value)}
-                    type="password"
-                    placeholder="Password"
-                  />
-                </Form.Group>
-                <Button variant="primary" onClick={(e) => login(e)}>
-                  Submit
-                </Button>
-              </Form>
-            </Tab>
-          </Tabs>
-        </Container>
+            <Tabs>
+              <Tab eventKey="home" title="sign up">
+                <Form>
+                  <Form.Group className="mb-3">
+                    <Form.Label>Email address</Form.Label>
+                    <Form.Control
+                      onChange={(e) => setEmail(e.target.value)}
+                      type="email"
+                      placeholder="Enter email"
+                      value={email}
+                    />
+                  </Form.Group>
+                  <Form.Group className="mb-3">
+                    <Form.Label>Name</Form.Label>
+                    <Form.Control
+                      onChange={(e) => setName(e.target.value)}
+                      placeholder="Name"
+                      value={name}
+                    />
+                  </Form.Group>
+                  <Form.Group className="mb-3">
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control
+                      onChange={(e) => setPassword(e.target.value)}
+                      type="password"
+                      placeholder="Password"
+                      value={password}
+                    />
+                  </Form.Group>
+                  <Button variant="primary" onClick={() => register()}>
+                    Submit
+                  </Button>
+                </Form>
+              </Tab>
+              <Tab eventKey="profile" title="login">
+                <Form>
+                  <Form.Group className="mb-3">
+                    <Form.Label>Email address</Form.Label>
+                    <Form.Control
+                      onChange={(e) => setEmail2(e.target.value)}
+                      type="email"
+                      placeholder="Enter email"
+                    />
+                  </Form.Group>
+                  <Form.Group className="mb-3">
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control
+                      onChange={(e) => setPassword2(e.target.value)}
+                      type="password"
+                      placeholder="Password"
+                    />
+                  </Form.Group>
+                  <Button variant="primary" onClick={(e) => login(e)}>
+                    Submit
+                  </Button>
+                </Form>
+              </Tab>
+            </Tabs>
+          </Container>
+        </div>
       )}
     </>
   );
