@@ -11,14 +11,43 @@
   z-index: 0;
 }
 
-.title,
-.description-text {
-  width: 30%;
-  /* margin: 55px; */
-  color: white;
-  letter-spacing: 0.08em;
+.button {
+  display: flex;
+  position: absolute;
+  right: 5%;
+  bottom: 18%;
 }
 
-.description-text {
+.card {
+  background: transparent;
+  max-width: 700px;
+  border: none;
+  margin: 30px;
+  color: white;
   font-size: 20px;
+}
+
+.card-title {
+  font-size: 25px;
+  padding: 0;
+  color: white;
+}
+
+.mons {
+  width: 400px;
+  padding-left: 50px;
+}
+
+.card-body {
+  font-size: 18px;
+  margin-left: 32px;
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    font-size: smaller;
+  }
+  .mons .card-title {
+    font-size: 20px;
+  }
 }
