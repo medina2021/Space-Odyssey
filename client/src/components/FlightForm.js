@@ -34,6 +34,13 @@ export default function FlightForm() {
         console.error(err);
       }
     }
+    setFirstName("");
+    setLastName("");
+    setEmailAddress("");
+    setAddress("");
+    setAreaCode("");
+    setState("");
+    setPhoneNumber("");
   };
   return (
     <>
@@ -45,6 +52,7 @@ export default function FlightForm() {
               onChange={(e) => setFirstName(e.target.value)}
               type="Name"
               placeholder="jose"
+              value={FirstName}
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -53,6 +61,7 @@ export default function FlightForm() {
               onChange={(e) => setLastName(e.target.value)}
               type="lastName"
               placeholder="lopez"
+              value={LastName}
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -61,6 +70,7 @@ export default function FlightForm() {
               onChange={(e) => setEmailAddress(e.target.value)}
               type="email"
               placeholder="name@example.com"
+              value={emailAddress}
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -69,6 +79,7 @@ export default function FlightForm() {
               onChange={(e) => setAddress(e.target.value)}
               type="address"
               placeholder="48482 mover dr"
+              value={address}
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -77,6 +88,7 @@ export default function FlightForm() {
               onChange={(e) => setAreaCode(e.target.value)}
               type="AreaCode"
               placeholder="92536"
+              value={AreaCode}
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -85,6 +97,7 @@ export default function FlightForm() {
               onChange={(e) => setState(e.target.value)}
               type="State"
               placeholder="CA"
+              value={State}
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -93,6 +106,7 @@ export default function FlightForm() {
               onChange={(e) => setPhoneNumber(e.target.value)}
               type="phoneNumber"
               placeholder="(***)***-****"
+              value={PhoneNumber}
             />
           </Form.Group>
           <Button variant="primary" onClick={(e) => register(e)}>

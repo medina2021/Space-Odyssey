@@ -15,7 +15,7 @@ export default function Andromeda() {
           <Card.Body>
             <Card.Title>Andromeda</Card.Title>
             <Card.Text>
-              Take a voyage on the famous barred spiral galaxy approximately 2.5
+              Take a voyage on the famous barred spiral galaxy approximately
               million light-years from Earth. This galaxy is known for having
               twice as many stars and is 25% to 50% more massive than the Milky
               Way.
